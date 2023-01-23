@@ -1,0 +1,6 @@
+## Vicente Javier Viera Guízar
+
+### Since the begining I knew what this _key moment in my life_ was, I got ti very clear. This is maybe the important moment I use to tell the most, because it´s a representation of how little and unexplainable things can change completely someones life such as mine´s. The inflection point in my life was when I first went in to high school and I needed to chose a specialization. When I was in middle school I didn´t knew what I wanted to do with my life, all I knew was that I liked computers, videogames and something related with art like music or drawing. When the time to select came I was only left with to choises of what I liked: graphic design or programming; and as it was the flip of o coin I went for programming. I was there for no aparent reason, I didn´t knew anything about computers, just the basics to survive to middle school. The first semesters were very difficult, I almost quited, but when I started to understand the basics and, how everything worked and why, I began to feel more and more entusiasm for what I was learning.   
+### That went on like that until it ended up in what I´m doing now for a career and a specialization for my life.
+
+
