@@ -20,5 +20,12 @@ Job Requirements
 * Basic Node.js
 * Data Bases Knowledge.
 
-## Contact:
-### **vicenteJVG@outlook.com**
+## Contacts:
+### Vicente Javier Viera Guízar:
+#### **vicenteJVG@outlook.com**
+#### **33-1178-2995**
+### Enrique Soto Vera:
+#### **enriquesotov3@gmail.com**
+#### **33-1833-7644**
+### Raúl Romano:
+#### **31-1263-2715**
