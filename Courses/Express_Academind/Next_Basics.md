@@ -1,6 +1,6 @@
 # Next.js Basics
 ## Definiciones:
-### Client Side Rendering(CSR)
+### __Client Side Rendering(CSR):__
 <div style="text-align: justify">
 
 Este tipo de reenderizado se hace mediante páginas de javascript vanilla, aplicaciones de Create React App(CRA) o tabién mediante otros frameworks de javasctipt como Astro o Gatsby.
@@ -14,9 +14,22 @@ Cuando estamos en un proyecto de React, la respuesta del servidor va a ser una p
 
 <br/>
 
-* ### Pros:
-* ### Contras:
+* #### Pros:
+* #### Contras:
 
 </div>
 
-## Server Side Rendering(SSR)
+### __Server Side Rendering(SSR):__
+
+<div style="text-align: justify">
+
+Este tipo de reenderizado se puede realizar mediante la utilización del framework __Next.js__ o bien,  la función de React:
+``` javascript
+reactDOMServer.renderToString();
+```
+Este tipo de reenderizado funciona precompilando la página directamente en el servidor en cuanto el navegador solicita la página. Toda la lógica, javascript, jsx, dependencias y llamadas a apis se quedan en el servidor. Lo que regresa al navegador son links y el HTML de la página precargada en el servidor.
+
+Código fuente de uan página simple de Next:
+
+<img src="./assets/SSR_Next_Code.jpeg" alt="Source Code of a Next SSR Page" style="width: 60%"/>
+</div>
