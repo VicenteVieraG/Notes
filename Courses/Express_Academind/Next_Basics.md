@@ -61,7 +61,158 @@ Se guardan todas las páginas y links o rutas que componen a la aplicación.
 Por defecto Next.js proporciona un sistema de routing muy eficiente e intuitivo. Este consiste en generar la rutas en base al mismo sistema de ficheros de Next, de forma que se parece a como se generan rutas en el sistema operativo mediante la creación de folders y jerarquía dentro de los mismos.
 
 En Next todo el apartado de rutas se maneja desde el folder de *__pages__*, Ahí, cada archivo .js generado representa una ruta cuyo nombre es el mismo que el de su correspondiente archivo. Si se crea un archivo llamado `Home.js`, en cuanto se acceda a la dierección _`/Home`_ el contenido reenderizado en la pantalla cambiará al componente representado en `Home.js`.
-#### Rutas Anidadas:
-Para crear __rutas anidadas__ es importante saber la función del archivo __`index.js`__. Este archivo representa la dirección default de cada ruta. En el folder de pages el componente que cargará al entrar a la dirección (root) _`/`_ será el que esta establecido en el archivo __`index.js`__. Estos mismos conceptos sobre las rutas aplica de la misma forma para las rutas anidadas. Para crear una ruta anidada solo se tiene que generar un folder dentro de pages. El nombre de la subruta será el mismo que el que el de la carpeta creada. El componente index será el que se muestre por default al entrar a la subruta. Los demás componentes creados se mostrarán de la misma manera al acceder a la ruta: _`/Nombre_de_la_carpeta/Nombre_Componente_dentro_de_carpeta`_.
-#### Rutas Dinámicas:
-Para crear rutas dinámicas solo se tiene que generar un archivo o una ruta normal cuyo nombre este escrito entre corchetes: [Nombre_de_mi_Carpeta].js. El nombre de la ruta servirá como variable a la hora de acceder a la ruta, osea que no estará atada a un solo nombre.
+#### __Rutas Anidadas:__
+Para crear rutas anidadas es importante saber la función del archivo __`index.js`__. Este archivo representa la dirección default de cada ruta. En el folder de pages el componente que cargará al entrar a la dirección (root) _`/`_ será el que esta establecido en el archivo __`index.js`__. Estos mismos conceptos sobre las rutas aplica de la misma forma para las rutas anidadas. Para crear una ruta anidada solo se tiene que generar un folder dentro de pages. El nombre de la subruta será el mismo que el que el de la carpeta creada. El componente index será el que se muestre por default al entrar a la subruta. Los demás componentes creados se mostrarán de la misma manera al acceder a la ruta: _`/Nombre_de_la_carpeta/Nombre_Componente_dentro_de_carpeta`_.
+#### __Rutas Dinámicas:__
+Para crear rutas dinámicas solo se tiene que generar un archivo o una ruta normal cuyo nombre este escrito entre corchetes: __[Nombre_de_mi_Carpeta_o_archivo].js__. El nombre de la ruta servirá como variable a la hora de acceder a la ruta, osea que no estará atada a un solo nombre.
+#### __Navegar Entre Rutas:__
+Mediante la utilización del tag: `<a><a/>`, se pueden hacer redirecciones a otras rutas de la aplicación mediante SSR. Por ejemplo:
+``` HTML
+<a href="/post/news"><a/>
+```
+También se puede utilizar un componente importado de Next llamado `<Link><Link/>`. Este componente permite la navegación entre rutas de manera similar en la que lo hace React. Este componente se carga inicialmente junto con su respectiva información inicial en cuanto el servidor manda el HTML por primera vez. Este componente tiene una sintáxis base como la siquiente:
+``` javascript
+import Link from 'next/link'
+
+const Home = () => {
+  return(
+    <ul>
+        <li>
+            <Link href="/">Home</Link>
+        </li>
+        <li>
+            <Link href="/about">About Us</Link>
+        </li>
+        <li>
+            <Link href="/blog/hello-world">Blog Post</Link>
+        </li>
+    </ul>
+  )
+}
+
+export default Home
+```
+Para ligar rutas dinámicas se puede utilizar la siguiente sintáxis:
+``` javascript
+import Link from 'next/link'
+
+const Posts = ({ posts }) => {
+  return (
+    <ul>
+      {posts.map((post) => (
+        <li key={post.id}>
+          <Link href={`/blog/${encodeURIComponent(post.slug)}`}>
+            {post.title}
+          </Link>
+        </li>
+      ))}
+    </ul>
+  )
+}
+
+export default Posts
+```
+También se puede hacer mediante un objeto URL:
+``` javascript
+import Link from 'next/link'
+
+const Posts = ({ posts }) => {
+  return (
+    <ul>
+      {posts.map((post) => (
+        <li key={post.id}>
+          <Link
+            href={{
+              pathname: '/blog/[slug]',
+              query: { slug: post.slug },
+            }}
+          >
+            {post.title}
+          </Link>
+        </li>
+      ))}
+    </ul>
+  )
+}
+
+export default Posts
+```
+#### __Imperative Routing//Next/router:__
+Este hook se puede utilizar para acceder al objeto router desde cualquier función:
+``` javascript
+import { useRouter } from 'next/router'
+
+const ActiveLink = ({ children, href }) => {
+  const router = useRouter();
+  const style = {
+    marginRight: 10,
+    color: router.asPath === href ? 'red' : 'black',
+  }
+
+  const handleClick = (e) => {
+    e.preventDefault()
+    router.push(href)
+  }
+
+  return (
+    <a href={href} onClick={handleClick} style={style}>
+      {children}
+    </a>
+  )
+}
+
+export default ActiveLink
+```
+Este hook dentro de todas las funciones que contiene proporciona dos que son básicas:
+* `router.push()`
+    + Toma como parámetro un objeto URL o bien un string conteniendo la ruta.
+``` javascript
+import { useRouter } from 'next/router'
+
+export default function Page() {
+  const router = useRouter()
+
+  return (
+    <button type="button" onClick={() => router.push('/about')}>
+      Click me
+    </button>
+  )
+}
+```
+* `router.query`
+    + Regresa un objeto conteniendo los parametros de la ruta con la que se accedió al componente.
+``` javascript
+import { useRouter } from 'next/router'
+
+const router = useRouter();
+const {news, headers} = router.query;
+```
+#### __Shallow Routing:__
+Permite recargar la página sin hacer de nuevo data fetch. Lo único que regresa el shallow routing es una URL actualizada accecible por medio de `router.query`. Este tipo de routing solamente tiene efecto dentro de la misma página en la que se solicita el cambio de URL.
+``` javascript
+import { useEffect } from 'react'
+import { useRouter } from 'next/router'
+
+// Current URL is '/'
+function Page() {
+  const router = useRouter()
+
+  useEffect(() => {
+    // Always do navigations after the first render
+    router.push('/?counter=10', undefined, { shallow: true })
+  }, [])
+
+  useEffect(() => {
+    // The counter changed!
+  }, [router.query.counter])
+}
+
+export default Page
+```
+
+
+# Recursos
+### Documentación Oficial Completa de Next 
+* https://nextjs.org/docs/getting-started
+### Ciclo de Renderizado en Next
+* https://nextjs.org/learn/foundations/how-nextjs-works/rendering
