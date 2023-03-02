@@ -19,14 +19,19 @@ Cuando estamos en un proyecto de React, la respuesta del servidor va a ser una p
 </div>
 
 ### __Server Side Rendering(SSR):__
-
 <div style="text-align: justify">
 
 Este tipo de reenderizado se puede realizar mediante la utilización del framework __Next.js__ o bien,  la función de React:
 ``` javascript
 reactDOMServer.renderToString();
 ```
-Este tipo de reenderizado funciona precompilando la página directamente en el servidor en cuanto el navegador solicita la página. Toda la lógica, javascript, jsx, dependencias y llamadas a apis se quedan en el servidor. Lo que regresa al navegador son links y el HTML de la página precargada en el servidor.
+Este tipo de reenderizado consiste en preprosesar la página web directamente en el servidor. Esto significa que el navegador recibe solamente el HTML y javascript necesario para poder generar la página. Al final no tiene que compilar nada, solo tiene que mostrar el HTML en el navegador.
+
+Existen dos típos de de SSR:
+* __Static Generation:__  
+Todo el HTML es generado __únicamente una sola vez__, justo en el momento en el que el comando `next build` es ejecutado. Este mismo código compilado se reutiliza de manera estática en cada solicitud del navegador. El navegador recibe únicamente el código que se precompiló en el build.
+* __Server-Side Rendering:__  
+Cada vez que se solicita una página, el servidor genera en ese momento todo el contenido HTML y lo manda al navegador recien compilado.
 
 Código fuente de uan página simple de Next:
 
@@ -216,3 +221,41 @@ export default Page
 * https://nextjs.org/docs/getting-started
 ### Ciclo de Renderizado en Next
 * https://nextjs.org/learn/foundations/how-nextjs-works/rendering
+
+# Normas mexicanas
+* ## NYCE
+# Estandaras para temas recientes
+* ## Dev Ops
+  + Integración continua
+* ## IA
+  + ISO/IEC
+* ## IOT
+  + ISO/IEC 30165
+* ## Business Continuity
+# Tipos de Estandares
+* ## Cantidad
+* ## Calidad
+* ## Costo
+* ## Tiempo
+--------------------------------------------------------
+## __Los Estandares nos ayudan a difereniarnos y a ser más eficientes mediante su seguimiento en toda la empresa.__
+</br>
+
+# Estandares En Ágil
+* ## Modularización
+  + ### Separar los problemas en muchos módulos o problemas más pequeños.
+* ## Keep it Simple
+* ## Testing
+* ## Hisitorias de Usuario
+* ## DevOps
+  + ### ISO/IEC/IEEE 32675:2022 // ISO/IEC CD 29110-5-5
+# Estandares más usados
++ ## ISO 9001
++ ## ISO 15504 33000
++ ## ISO/IEEE 830
++ ## ISO 25000
++ ## ISO 29110
++ ## CMMI
+# Tomar acciones en la industria
++ Entender estandares ayuda a acercarse a experiencias de la vuda real.
++ Permite ahorrar costos y optimizar procesos.
