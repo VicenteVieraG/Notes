@@ -283,6 +283,31 @@ Estos helpers son asignados al parámetro res. res contiene muchas propiedades y
 * `res.json(body)`: Regresa como respuesta un objeto json al cliente.
 * `res.send(body)`: Regresa al cliente una respuesta HTTP. Body puede ser un string, un json o un buffer.
 * `res.redirect([status], path)`: Redirecciona a al path especificado con su respectivo código válido de estatus.
+## __Fetching de Data__
+El manejo de estos recursos permite controlar el flujo y la forma en la que se reenderizan los componentes.
+### __getServerSideProps__
+Si se exporta desde cualquier página una función llamada `getServerSideProps`, automáticamente, el servidor va a pre-renderizar dicha página cada vez que se solicite, con la información retornada por la función embebida en la página. Esto proporciona la modalidad de precompilado conocida en Next como __SSR__ (Server Side Rendering).
+``` javascript
+const getServerSideProps = async(context) => {
+  return {
+    props: {} // will be passed to the page component as props
+  }
+}
+
+export getServerSideProps;
+```
+### __getStaticProps__
+Esta función se ejecuta únicamente en el momento en el que se ejecuta el comando `next build`. Justamente en el momento del build se llama a la mencionada función. A la hora de la compilación las páginas se crean usando los datos establecidos en el `getStaticProps` y no vuelven a cambiar. Al agregar esta función a una page component automáticamente se renderizará el HTML mediante el método de pre-rendering de __Static Generation__.  
+Este es el tipo de pre-rendering más eficiente que ofrece Next y también el que se recomienda debido a la rapidez en la que se despachan las páginas; gracias a que estas ya estan generadas, no se tiene que compilar nada.
+``` javascript
+const getStaticProps = async(context) => {
+  return {
+    props: {} // will be passed to the page component as props
+  }
+}
+
+export getStaticProps;
+```
 
 # Recursos
 ### Documentación Oficial Completa de Next 
