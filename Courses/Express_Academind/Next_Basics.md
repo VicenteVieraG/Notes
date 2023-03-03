@@ -62,7 +62,7 @@ Ahí se guardan todos los assets y recursos del proyecto como bién pueden ser i
 Se guardan tadas las partes que conforman el programa en su estructura más elemental.
 * __pages:__  
 Se guardan todas las páginas y links o rutas que componen a la aplicación.
-### Routing:
+### __Routing:__
 Por defecto Next.js proporciona un sistema de routing muy eficiente e intuitivo. Este consiste en generar la rutas en base al mismo sistema de ficheros de Next, de forma que se parece a como se generan rutas en el sistema operativo mediante la creación de folders y jerarquía dentro de los mismos.
 
 En Next todo el apartado de rutas se maneja desde el folder de *__pages__*, Ahí, cada archivo .js generado representa una ruta cuyo nombre es el mismo que el de su correspondiente archivo. Si se crea un archivo llamado `Home.js`, en cuanto se acceda a la dierección _`/Home`_ el contenido reenderizado en la pantalla cambiará al componente representado en `Home.js`.
@@ -214,48 +214,78 @@ function Page() {
 
 export default Page
 ```
+## __API__
+Next.js contiene su propia solución para crear tu propia API dentro del mismo proyecto. Esto se obtiene mediante la utilización del folder `pages/api`.  
+De manera similiar a la que funciionan las páginas dentro del folder de `pages`, todos los archivos generados dentro de esta carpeta serán interpretados automáticamente como endpoints a los cuales podremos acceder desde el frontend.
 
+Para que una ruta dentro de api funcione se rquiere que se exporte una función como default, dicha función también es conocida como __requestHandler__. Esta función toma dos parametros:
+* __req:__ Es un objeto de tipo `http.IncomingMessage`. Esta contiene toda la información del request más aparte, información de middlewares.
+* __res:__ Es un objeto de tipo `http.ServerResponse`. Este contiene métodos relacionados con las respuestas que proporciona el endpoint actual.  
+
+Este es un ejemplo de dicha función:
+``` javascript
+const requestHandler = (req, res) => {
+  res.status(200).json({name: "Ete Sech"});
+}
+
+export default requestHandler;
+```
+Para manejar distintos métodos HTTP dentro de la API se puede utilizar el método `req.method` de la siguiente manera:
+``` javascript
+const requestHandler = (req, res) => {
+  if(req.method === "POST"){
+    //Do Something
+  }else{
+    //If is not POST do something else
+  }
+}
+
+export default requestHandler;
+```
+### __Rutas Dinámicas de API__
+Para generar endpoints dinámicos en Next.js, se puede hacer de forma similar a como se hacen las rutas dinámicas para `pages`. La sintáxis que se utiliza es: `pages/api/news/[latest].js`. Sintáxis con el ejemplo anterior:
+``` javascript
+const requestHandler = (req, res) => {
+  const {latest} = req.query;
+  res.end(`Post: ${latest}`);
+}
+
+export default requestHandler;
+```
+Se pueden generar rutas dinámicas de las siguientes formas: 
+* `pages/api/posts.js`-> ruta tradicional.
+* `pages/api/posts/[idPosts].js`-> ruta dinámica.
+* `pages/api/posts/index.js`-> ruta default mediante index.js.
+
+Es posible recibir todas las rutas mediante la siguiente sintáxis: `pages/api/news/[...any].js`. Este documento recibiría endpoints con la siguiente estructura: `api/news/a`, `api/news/a/b`, `api/news/a/b/c....` y asi indefiidamente.  
+Los parámetros de este tipo de rutas se reciben mediante `query` de la misma forma en la que se recibe cualquier parámetro de una api, solo que este contiene un arreglo con los valores. Ejemplo para el endpoint `api/news/a/b` con la ruta `api/news/[...params].js`:
+``` javascript
+//Forma del objeto query
+{params: ["a", "b"]};
+```
+### __API Routes Request Helpers__
+El objeto de request contiene varios métodos y propiedades que ayudan a trabajar con los requests.
+* `req.cookies`: Cookies enviados en el request.
+* `req.query`: Objeto que contiene los parámetros de las rutas.
+* `req.body`: Objeto que contiene toda la información del body del request.
+### __Configuración Personalizada__
+Cada ruta dentro de api puede exportar un objeto de configuración adicional. Dentro de este objeto se puden modificar varios parámetros los cuales se pueden ver más a detalle en le siguiente link: https://nextjs.org/docs/api-routes/request-helpers. Un ejemplo de estos helpers puede ser el siguiente:
+``` javascript
+export const config = {
+  api: {
+    responseLimit: false
+  }
+}
+```
+### __API Routes Response Helpers__
+Estos helpers son asignados al parámetro res. res contiene muchas propiedades y funciones similares a express, las cuales facilitan el desarrollo de endpoints. Estas son varias de las funciones que res provee:
+* `res.status(code)`: Regresa al cliente el estatus de la operación.
+* `res.json(body)`: Regresa como respuesta un objeto json al cliente.
+* `res.send(body)`: Regresa al cliente una respuesta HTTP. Body puede ser un string, un json o un buffer.
+* `res.redirect([status], path)`: Redirecciona a al path especificado con su respectivo código válido de estatus.
 
 # Recursos
 ### Documentación Oficial Completa de Next 
 * https://nextjs.org/docs/getting-started
 ### Ciclo de Renderizado en Next
 * https://nextjs.org/learn/foundations/how-nextjs-works/rendering
-
-# Normas mexicanas
-* ## NYCE
-# Estandaras para temas recientes
-* ## Dev Ops
-  + Integración continua
-* ## IA
-  + ISO/IEC
-* ## IOT
-  + ISO/IEC 30165
-* ## Business Continuity
-# Tipos de Estandares
-* ## Cantidad
-* ## Calidad
-* ## Costo
-* ## Tiempo
---------------------------------------------------------
-## __Los Estandares nos ayudan a difereniarnos y a ser más eficientes mediante su seguimiento en toda la empresa.__
-</br>
-
-# Estandares En Ágil
-* ## Modularización
-  + ### Separar los problemas en muchos módulos o problemas más pequeños.
-* ## Keep it Simple
-* ## Testing
-* ## Hisitorias de Usuario
-* ## DevOps
-  + ### ISO/IEC/IEEE 32675:2022 // ISO/IEC CD 29110-5-5
-# Estandares más usados
-+ ## ISO 9001
-+ ## ISO 15504 33000
-+ ## ISO/IEEE 830
-+ ## ISO 25000
-+ ## ISO 29110
-+ ## CMMI
-# Tomar acciones en la industria
-+ Entender estandares ayuda a acercarse a experiencias de la vuda real.
-+ Permite ahorrar costos y optimizar procesos.
