@@ -9,6 +9,8 @@
 ## Vicente Javier Viera Guízar
 ### 04/20/23
 
+![Real Image](assets/GWOTM.png "Real Video Image")
+
 Most part of the people know this performance by the well known crepypasta named: *Gateway of the mind*, which firstly showed up in internet during the golden age of crepypastas arround 2010 and 2016. A lot of people think that this actuation was created just for the horror story, but behind the morbid narration and, inside a dark and forsaken corner of our minds, somethig, not less bizarre; stalks prowling through our own eyes, not only ourselfs but the people and society arround us.
 
 There is no more reason a person would visit this rotten part of internet expet for the morbid feelings this produces in the people. My thinking of the reason this can happen is because the main theme falls in a taboo and a part of us that we preffer to ignore: the inner animal part from every and each of us. This can be a scary thought for a lot of people because it judges the purpose of our lives, our role in the existance and in the society.
