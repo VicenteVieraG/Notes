@@ -1,0 +1,8 @@
+# Pitch
+## Vicente Javier Viera Guízar
+
+Siempre me he sentido alineado con muchas de las ideas del filósofo prussiano *Immanuel Kant*, sus ideas me han convencido y motivado. Kant, comprometido con el sublime cielo estrellado de Königsberg, el noble amor a la humanidad y el sentido del deber y la moral, se inspiró para inmortalizar una de sus grandes frases: *Dos cosas llenan mi ánimo de admiración y respeto: el cielo estrellado sobre mí y la moral que habita en mí*. Esta frase me ha hecho continuar en momentos dífiles y reconocer la belleza del mundo. Recordando esta frase frente la incertidumbre es que pude terminar mis mejores proyectos; ultimadamente apoyar al desarrollo y sociedad mientras se generan experiencias. 
+
+Para llegar hasta este punto pase por un proceso de fallar y recuperarme. Cada fallo me motiva a mejorar y seguir adelante, siendo mejor cada vez. Tuve que aprender a trabajar en equipo, ser autodidacta y producir comunicación acertiva. Mi mayor habilidad adquirida es la determinación y disposición que poseo para aprender cosas nuevas. Gracias a esta habilidad he podido llegar a la culminación LLAVER, uno de mis mejores proyectos actualmente disponeible en mi repositorio de github.
+
+Espero poder seguir mejorando para poder desarrollar en algún momento un programa capaz de impactar positivamente en las personas, ya sea que las ayude a optimizar tareas o procesos, o aportar con algún conocimiento nuevo al area o generar algún producto que pueda ser para el disfrute de las personas y que las ayude a experiemntar un bello tiempo de vida.
