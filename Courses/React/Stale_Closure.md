@@ -9,10 +9,9 @@ div {
 </style>
 <div>
 
-# React Notes
-## Stale Closure
+# Stale Closure
 This is when a variable has an outdated value. Translated to React, is when a state´s value doesn´t updates in time when changed.
-### Example of Stale Closure
+## Example of Stale Closure
 ``` javascript
 cosnt createIncrement = (incBy) => {
     let value = 0;
@@ -38,7 +37,7 @@ increment(); // logs 3
 log();      // logs "Current value is 0"
 ```
 In this example we are returning two functions: one adds *`incBy`* value to the previous value and the other one logs the current value to the terminal. In this example the __`increment`__ function works as espected but, __`log`__ function doesn´t; it always returns 0.
-### How to Solve the Stale Closure
+## How to Solve the Stale Closure
 One simple way to solve the stale is to move the `message` variable inside the __`log`__ function. This is caused because in the initial case `message` is out of the dominion of the returning function.
 ``` javascript
 cosnt createIncrement = (incBy) => {
@@ -64,7 +63,7 @@ increment(); // logs 3
 // Works!
 log();      // logs "Current value is 3"
 ```
-### Stale Closure in useEffect()
+## Stale Closure in useEffect()
 ``` javascript
 const WatchCount = () => {
     const [count, setCount] = useState(0);
@@ -106,7 +105,7 @@ const WatchCount = () => {
     );
 }
 ```
-### Stale With useState()
+## Stale With useState()
 The proper way is to use the function parameter for the `setState()`, this is the sintax:
 ``` javascript 
 // Simpler Way
@@ -117,7 +116,7 @@ setState(actualStateValue => {
     return newStateValue;
 });
 ```
-### Resources
+## Resources
 https://dmitripavlutin.com/react-hooks-stale-closures/
 https://dilshankelsen.com/understanding-stale-closures-in-javascript/
 </div>
