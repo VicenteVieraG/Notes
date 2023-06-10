@@ -39,3 +39,11 @@ no,
 all,  
 most
 # 167
+have done | if you were me
+i had known
+had stayed | would
+# 106
+they denied
+he offered
+persuaded
+complained
