@@ -8,9 +8,23 @@ Los links se declaran como si fueran variables. Se les pueden asignar valores de
 >[Nombre_de_La_Variable]: Link .
 
 Para utilizar la variable basta con la siguiente sintáxis:
->[Texto][[Nombre de la variable]]
+>[Texto][Nombre de la variable]
 
 La misma sintáxis se usa para hacer referencias a elementos dentro del mismo documento:
 >[Texto](Nivel en la jerarquía del elemento a seleccionar(#,##,###,...)Texto del elemento a seleccionar)
 
 No se pueden declarar dentro de un párrafo o si no se tiene un salto de linea de separación de un párrafo.
+## Notas de Pie de Página
+Estas sirven para crear referencias hacia definiciones dentro del mismo documento:
+Condepto al que se le quiere agar una definición:
+Texto[^1]
+
+Declaración de la definición: (Ver en __Markdown__)
+>[^1]: Link
+## Dependencias Instaladas
+- Markdown All in One
+- Markdown Checkboxes
+- Markdown Emoji
+- Markdown Footnotes
+- Markdown Preview Mermaid Support
+- Mermaid Markdown Syntax Highlighting
