@@ -1,4 +1,18 @@
 # Notas
+## Plantilla Para Formato de Documentos
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+
+div {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    text-align: justify;
+}
+</style>
+<div>
+
+</div>
+
 Breve guía de nuevas funciones de las extendiones de markdown.
 ## Checkboxes
 - [ ] Esto es una checkbox vacía.
