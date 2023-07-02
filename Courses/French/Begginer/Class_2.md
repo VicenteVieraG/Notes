@@ -11,7 +11,7 @@ div {
 
 # Class 2
 ## Qu´est-ce que c´est
-==Question== -> Qu´est-ce que c´est
+Question -> Qu´est-ce que c´est
 Answer:
 * C´est -> Singular
 * Ce sont -> Plural
@@ -34,6 +34,9 @@ Mére -> Mother //Madre
 ### Grand-Parents -> Grandparents // Abuelos
 Grand-Pére -> Grand Father // Abuelo
 Grand-Mére -> Grand Mother // Abuela
+## Do you have Brothers and Sisters?
+As-tu des fréres et soeurs?  
+J´ai un frére
 ## Possesive Pronouns
 | Possessive Pronoun | Masculine | Femenin | Plural |
 | :----------------- | :-------- | :------ | :----- |

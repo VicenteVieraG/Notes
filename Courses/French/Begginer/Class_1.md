@@ -11,35 +11,33 @@ div {
 
 # Basics
 ## Salutations
-* Bonjour -> Formel
-* Salut -> Informel
-* Allô -> Informel
-* Hey -> Informel
+* Bonjour -> *Formel*
+* Salut -> *Informel*
+* Allô -> *Informel*
+* Hey -> *Informel*
 ## Phrases
 * __What´s your name?__
-  * Commont tu t´appelles? -> Informel
-  * Common vous vous appelles? -> Formel
-* How is spelled?
+  * Commont tu t´appelles? -> *Informel*
+  * Common vous vous appelles? -> *Formel*
+  * Quel est son prénom? -> *Formel*
+* __How is it spelled?__
   * Comment ca sécrit?
-* How old are you?
-  * Quel âge as-tu? -> Informel
-  * Quell´âge avez-vous? -> Formel
-  * Answer:
+* __How old are you?__
+  * Quel âge as-tu? -> *Informel*
+  * Quell´âge avez-vous? -> *Formel*
+  * **Answer**:
       * J´ai <*number*> ans -> I am <*number*>
-* Which country aro you from?
+* __Which country aro you from?__
   * Quelle est ta nationalite?
   * Answer:
     * Je suis mexicaine
-* Qu´est-ce que c´est?
+* __Qu´est-ce que c´est?__
   * C´est <*object*>
   * C´sont <*object*>
-* How many <*object*> are?
+* __How many <*object*> are?__
   * Combien il y a de <*object*>
   * Answer:
     * Il y a <*number*> <*object*>
-* What is your name?
-  * quel est son prénom?
-  Answer:
 ## Nationalities
 ## Numbers
 10 | 11  
@@ -58,25 +56,18 @@ div {
 * O, o
 * U, u
 * Y, y
-* ## Verbs
-* __Avoir__ -> to Have
-  * J´ai
-  * Tu as
-  * Il a
-  * Elle a
-  * On a
-  * Nous avons
-  * Vous avez
-  * Ils ont
-  * Elles ont
-* __Etre__ -> to Be
-  * Je suis
-  * Tu es
-  * Il est
-  * Elle est
-  * On est
-  * Nous Sommes
-  * Vous êtes
-  * Ils sont
-  * Elles sont
+## Verbs
+### Être -> *To be*
+### Avoir -> *To have*
+| Pronoun | Être   | Avoir |
+| :------ | :----- | :---- |
+| Je      | Suis   | J´ai  |
+| Tu      | Es     | As    |
+| Il      | Est    | A     |
+| Elle    | Est    | A     |
+| On      | Est    | A     |
+| Nous    | Sommes | Avons |
+| Vous    | Êtes   | Avez  |
+| Ils     | Sont   | Ont   |
+| Elles   | Sont   | Ont   |
 </div>
