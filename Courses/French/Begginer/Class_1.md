@@ -39,23 +39,31 @@ div {
   * **Answer**:
     * Il y a <*number*> <*object*>
 ## Nationalities
-| Pay            | Féminin      | Masculin    |
-| :------------- | :----------- | :---------- |
-| La France      | Française    | Français    |
-| Les Êtats-Unis | Américaine   | Américain   |
-| L'Itaile       | Italiane     | Italien     |
-| L'Japon        | Japonaise    | Japonais    |
-| L'Angleterre   | Anglaise     | Anglais     |
-| Le Canada      | Canadienne   | Canadien    |
-| L'Allemagne    | Allemande    | Allemand    |
-| L'Espagne      | Espagnole    | Espagnol    |
-| Le Brésil      | Brésilienne  | Brésilien   |
-| La Belgique    | Belge        | Belge       |
-| Le Maroc       | Marocaine    | Marocain    |
-| L'Inde         | Indienne     | Indien      |
-| La Corée       | Coréene      | Coréen      |
-| L'Australie    | Australienne | Australien  |
-| Les Pays-Bas   | Néerlandaise | Néerlandais |
+### Où habites-tu? -> *Where Do you Live?*
+### Où habites-vous? -> *More Formal*
+J'habit <*en/au/aux*> <*Country*>:
+* En -> *Countries in Femenin*
+* Au -> *Countries in Masculine*
+* Aux -> *Cuintries in Plural*
+* Á -> *Names of Cities and Villages*
+
+| Pay            | Féminin      | Masculin    | J'habite *en/au/aux* |
+| :------------- | :----------- | :---------- | :------------------- |
+| La France      | Française    | Français    | En                   |
+| Les Êtats-Unis | Américaine   | Américain   | Aux                  |
+| L'Itaile       | Italiane     | Italien     | En                   |
+| L'Japon        | Japonaise    | Japonais    | Au                   |
+| L'Angleterre   | Anglaise     | Anglais     | En                   |
+| Le Canada      | Canadienne   | Canadien    | Au                   |
+| L'Allemagne    | Allemande    | Allemand    | En                   |
+| L'Espagne      | Espagnole    | Espagnol    | En                   |
+| Le Brésil      | Brésilienne  | Brésilien   | Au                   |
+| La Belgique    | Belge        | Belge       | En                   |
+| Le Maroc       | Marocaine    | Marocain    | Au                   |
+| L'Inde         | Indienne     | Indien      | En                   |
+| La Corée       | Coréene      | Coréen      | En                   |
+| L'Australie    | Australienne | Australien  | En                   |
+| Les Pays-Bas   | Néerlandaise | Néerlandais | Aux                  |
 ## Numbers
 10 | 11  
 20 | 21 |  
