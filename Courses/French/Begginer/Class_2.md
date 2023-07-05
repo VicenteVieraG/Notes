@@ -13,9 +13,11 @@ div {
 ## Question Words
 * Que -> *What*
 * Qui -> *Who*
-* Ou -> *Where*
+* Où -> *Where*
 * Quand -> *When*
 * Comment -> *How*
+* Combien -> *How many*
+* Pourquoi -> *Why* 
 ## Auxiliary for Making Questions
 * est-ce que
 * est-ce qui
