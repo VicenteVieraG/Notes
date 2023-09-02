@@ -13,7 +13,9 @@ h2 {
 </style>
 <div>
 
-# Tec Files
-- [Semestre 6](./Semestre_6/INDEX.md)
-- [Semestre 7](./Semestre_7/INDEX.md)
+# Semestre 6
+- [Adán](./Adan_CI/)
+- [Ana](./Ana/)
+- [Ken](./ken/)
+- [Semana Tec2](./STec2/)
 </div>

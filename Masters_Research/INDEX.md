@@ -13,7 +13,8 @@ h2 {
 </style>
 <div>
 
-# Tec Files
-- [Semestre 6](./Semestre_6/INDEX.md)
-- [Semestre 7](./Semestre_7/INDEX.md)
+# Investigación de Maestrías
+## Índice
+- [Universidades Índice](./Universities/INDEX.md)
+  - [Lista de Universidades](./Universities/Universities_List.md)
 </div>

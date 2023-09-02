@@ -6,14 +6,9 @@ div {
     font-size: 16px;
     text-align: justify;
 }
-
-h2 {
-    font-weight: lighter
-}
 </style>
 <div>
 
-# Tec Files
-- [Semestre 6](./Semestre_6/INDEX.md)
-- [Semestre 7](./Semestre_7/INDEX.md)
+# Universidades
+- [Lista de Universidades](Universities_List.md)
 </div>
