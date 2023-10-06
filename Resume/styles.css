@@ -1,7 +1,0 @@
-:root {
-	--Main_Color : #1A4652;
-}
-
-#header {
-	background-color: var(--Main_Color);
-}
