@@ -126,7 +126,7 @@ background-size: 100%;
 
 <!-- Contact info container -->
 <div id="contact-info">
-<a href="linkedin.com/in/vicente-javier-viera-guízar-979871219">
+<a href="https://www.linkedin.com/in/vicente-viera-gu%C3%ADzar-979871219/">
 <div class="icons8-linkedin"></div>
 </a>
 <a href="https://github.com/VicenteVieraG">

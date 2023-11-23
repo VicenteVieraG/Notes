@@ -1,0 +1,1 @@
+{"rule":"THREE_NN","sentence":"^\\QRAYO\nMain Web Frontend Developer and Leader\nFintech startup focused on cryptocurrency and the easy access and management of bank accounts.\\E$"}
