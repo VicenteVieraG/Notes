@@ -1,0 +1,1 @@
+{"rule":"ES_UNPAIRED_BRACKETS","sentence":"^\\Q“Clasificación y visualización entre monólogo interno y lectura silenciosa analizando sincronía funcional de datos electroencefalográficos\"\\E$"}
