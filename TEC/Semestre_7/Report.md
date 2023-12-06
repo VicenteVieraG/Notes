@@ -1,5 +1,15 @@
-Análisis de modelo de visualización 3D BRAINIAC
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
 
+div {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    text-align: justify;
+}
+</style>
+<div>
+
+# Análisis de modelo de visualización 3D BRAINIAC
 Este proyecto surge como un viaje de exploración dentro del vasto mundo de la computación gráfica. Se inició por conocer las bases fundamentales intrínsecas a la visualización de modelos 3D en ordenadores, por ejemplo: vértices y aristas, proceso de renderizado, API de gráficos para comunicarse con la GPU… Esto llevó a la investigación e implementación de algoritmos para crear formas a partir de puntos en una matriz. En el caso de BRAINIAC y, en la mayoría de renderizados populares, el modelo de polígonos triangulares agrupados en objetos de tipo Mesh quedó para la posteridad del proyecto.
 
 BRAINIAC inició siendo una idea con algunas diferencias significativas en el propósito y dirección del proyecto. En una primera iteración se observaron los primeros signos de vida de BRAINIAC en un framework de C++ llamado Cinder. Este proporcionaba un conjunto de herramientas para trabajar con gráficos a bajo y medio nivel, incluyendo implementación de una rendering loop eficiente y una forma bastante simple de manejar eventos dentro del rendering pipeline. De cajón todo esto dentro de un contexto de OpenGL. Las pruebas iniciales fueron buenas, sin embargo, la visión de bajo nivel del proyecto contemplaba un intervalo de tiempo mayor para llegar a resultados satisfactorios. La respuesta a esta problemática era clara, pues, dentro del mismo planteamiento se señala indiscretamente el impedimento principal: la implementación a bajo nivel, si bien, eficiente, tomaba más tiempo de desarrollo e investigación. Fue así como surgió BRAINIAC-WEB.
@@ -43,3 +53,4 @@ Debido a que se tienen que hacer la asignación de puntos por cada nivel, tenemo
 La segunda estructura de datos utilizada es un Spacial Map. Esta es la elección predilecta para acompañar al Octree debido a que los modelos de las fibras y los cerebros son estáticas en la escena. Los Spacial Maps son hash tables que mapean coordenadas a zonas del espacio. Estas toman como llave un vértice y regresan el octante en el que este se encuentra. Su creación de tiempo lineal con base en n pero su tiempo de búsqueda es constante, lo que les da una ventaja en el largo plazo.
 
 En conclusión, el manejo adecuado de las estructuras de datos es crucial en el desarrollo de programas enfocados a gráficos computacionales debido a la cantidad de operaciones que se tienen que hacer por cada frame. De aquí en adelante la mejor forma posible de mejorar el rendimiento de la aplicación es mediante programación pluri-hilada.
+</div>
