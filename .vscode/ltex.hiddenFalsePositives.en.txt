@@ -1,3 +1,5 @@
 {"rule":"THREE_NN","sentence":"^\\QRAYO\nMain Web Frontend Developer and Leader\nFintech startup focused on cryptocurrency and the easy access and management of bank accounts.\\E$"}
 {"rule":"PASSIVE_VOICE","sentence":"^\\QThe Cinder weapon along a lot of technology were lost after the war.\\E$"}
 {"rule":"SENTENCE_FRAGMENT","sentence":"^\\QAfter a lot of intelligence work suspicions of the possible location of Edenia were found.\\E$"}
+{"rule":"PASSIVE_VOICE","sentence":"^\\QGLUT\nOpenGL Utility Toolkit\nIs no longer maintained.\\E$"}
+{"rule":"WORD_CONTAINS_UNDERSCORE","sentence":"^\\QUsig GLEW\n#include <GL/glew.h>\nAfter initialisation OpenGL context:\nglewExperimental = GL_TRUE;\nThis allows to acces more advanded GLEW methods\nInitialise GLEW:\nglewInit();\nValidate if GLEW inited correctly:\nglewGetErrorString(result);\nCheck if extensions exists:\nif(!GLEW_EXT_famebuffer object){}\nwglew.h used for Windows only functions\\E$"}
