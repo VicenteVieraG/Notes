@@ -3,3 +3,5 @@
 {"rule":"SENTENCE_FRAGMENT","sentence":"^\\QAfter a lot of intelligence work suspicions of the possible location of Edenia were found.\\E$"}
 {"rule":"PASSIVE_VOICE","sentence":"^\\QGLUT\nOpenGL Utility Toolkit\nIs no longer maintained.\\E$"}
 {"rule":"WORD_CONTAINS_UNDERSCORE","sentence":"^\\QUsig GLEW\n#include <GL/glew.h>\nAfter initialisation OpenGL context:\nglewExperimental = GL_TRUE;\nThis allows to acces more advanded GLEW methods\nInitialise GLEW:\nglewInit();\nValidate if GLEW inited correctly:\nglewGetErrorString(result);\nCheck if extensions exists:\nif(!GLEW_EXT_famebuffer object){}\nwglew.h used for Windows only functions\\E$"}
+{"rule":"PASSIVE_VOICE","sentence":"^\\QVertex Post-Processing\nTransforms Feedback (if enabled):\nResult of Vertex and Geometry stages saved to buffers for later use\nClipping:\nPrimitives that won't be visible are removed (don't want to draw things we can't see!)\\E$"}
+{"rule":"PASSIVE_VOICE","sentence":"^\\QPrimitive Assembly\nVertices are converted into a series of primitives\nRasterizarion\nFragment Shader (Programmable)\nPer-Sample operations.\\E$"}
