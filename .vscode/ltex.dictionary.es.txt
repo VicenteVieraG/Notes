@@ -36,3 +36,4 @@ hash
 tables
 frame
 pluri
+cuantiles
