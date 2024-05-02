@@ -46,9 +46,12 @@ pdf_options:
 
 # Evidencia 1.2 Packet Tracer - Implement VLANs and Trunking-1.pka
 ![Evidencia 1.2.1][EVIDENCIA1_2_1]
-# 1.2 Packet Tracer - Configure Router-on-a-Stick Inter-VLAN Routing-1.pka
+# Evidencia 1.2 Packet Tracer - Configure Router-on-a-Stick Inter-VLAN Routing-1.pka
 ![Evidencia 1.2.2][EVIDENCIA1_2_2]
+# 1.2 Evidencia Packet Tracer - Configure Layer 3 Switching and Inter-VLAN Routing-1.pka
+![Evidencia 1.2.3][EVIDENCIA1_2_3]
 
 [EVIDENCIA1_2_1]: ./assets/Evidencia_1.2.png
 [EVIDENCIA1_2_2]: ./assets/Evidencia_1_2_2.png
+[EVIDENCIA1_2_3]: ./assets/Evidencia_1_2_3.png
 </section>
