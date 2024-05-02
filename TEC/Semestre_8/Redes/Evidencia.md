@@ -52,9 +52,12 @@ pdf_options:
 ![Evidencia 1.2.3][EVIDENCIA1_2_3]
 # Evidencia 1.3 Packet Tracer - Configuring OSPFv2 in a Single Area-1.pka
 ![Evidencia 1.3.1][EVIDENCIA1_3_1]
+# Evidencia 1.4 Packet Tracer - HSRP Configuration Guide-1.pka
+![Evidencia 1.4.1][EVIDENCIA1_4_1]
 
 [EVIDENCIA1_2_1]: ./assets/Evidencia_1.2.png
 [EVIDENCIA1_2_2]: ./assets/Evidencia_1_2_2.png
 [EVIDENCIA1_2_3]: ./assets/Evidencia_1_2_3.png
 [EVIDENCIA1_3_1]: ./assets/Evidencia_1_3_1.png
+[EVIDENCIA1_4_1]: ./assets/Evidencia_1_4_1.png
 </section>
