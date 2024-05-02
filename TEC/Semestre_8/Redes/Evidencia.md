@@ -50,8 +50,11 @@ pdf_options:
 ![Evidencia 1.2.2][EVIDENCIA1_2_2]
 # 1.2 Evidencia Packet Tracer - Configure Layer 3 Switching and Inter-VLAN Routing-1.pka
 ![Evidencia 1.2.3][EVIDENCIA1_2_3]
+# Evidencia 1.3 Packet Tracer - Configuring OSPFv2 in a Single Area-1.pka
+![Evidencia 1.3.1][EVIDENCIA1_3_1]
 
 [EVIDENCIA1_2_1]: ./assets/Evidencia_1.2.png
 [EVIDENCIA1_2_2]: ./assets/Evidencia_1_2_2.png
 [EVIDENCIA1_2_3]: ./assets/Evidencia_1_2_3.png
+[EVIDENCIA1_3_1]: ./assets/Evidencia_1_3_1.png
 </section>
