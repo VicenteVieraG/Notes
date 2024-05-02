@@ -42,11 +42,13 @@ pdf_options:
 ###### 01/04/2024
 </section>
 
-<div id="break">
-</br></br></br></br></br></br></br></br></br></br>
-</div>
+<section id="evidencia"> 
 
 # Evidencia 1.2 Packet Tracer - Implement VLANs and Trunking-1.pka
-![Evidencia 1.2.1][EVIDENCIA1_2_3]
+![Evidencia 1.2.1][EVIDENCIA1_2_1]
+# 1.2 Packet Tracer - Configure Router-on-a-Stick Inter-VLAN Routing-1.pka
+![Evidencia 1.2.2][EVIDENCIA1_2_2]
 
-[EVIDENCIA1_2_3]: ./assets/Evidencia_1.2.png
+[EVIDENCIA1_2_1]: ./assets/Evidencia_1.2.png
+[EVIDENCIA1_2_2]: ./assets/Evidencia_1_2_2.png
+</section>
