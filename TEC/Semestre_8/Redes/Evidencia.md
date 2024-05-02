@@ -47,3 +47,6 @@ pdf_options:
 </div>
 
 # Evidencia 1.2 Packet Tracer - Implement VLANs and Trunking-1.pka
+![Evidencia 1.2.1][EVIDENCIA1_2_3]
+
+[EVIDENCIA1_2_3]: ./assets/Evidencia_1.2.png
