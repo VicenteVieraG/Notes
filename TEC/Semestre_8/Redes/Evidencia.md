@@ -62,6 +62,21 @@ pdf_options:
 ![Evidencia 1.5.3][EVIDENCIA1_5_3]
 # Evidencia 1.5c Packet Tracer - FTP-1.pka
 ![Evidencia 1.5.4][EVIDENCIA1_5_4]
+</section>
+
+<!-- Grades Chart -->
+| Evidencia                                              | Calificación |
+| ------------------------------------------------------ | -----------: |
+| 1.2 Packet Tracer - Implement VLANs and Trunking       |          100 |
+| 1.2 Configure Router-on-a-Stick Inter-VLAN Routing     |          100 |
+| 1.2 Configure Layer 3 Switching and Inter-VLAN Routing |          100 |
+| 1.3 Configuring OSPFv2 in a Single Area                |          100 |
+| 1.4 HSRP Configuration Guide                           |          100 |
+| 1.5 Configure DHCPv4                                   |          100 |
+| 1.5a Web and Email                                     |           92 |
+| 1.5b DNS and DHCP                                      |          100 |
+| 1.5.c FTP                                              |           90 |
+| Promedio                                               |       __98__ |
 
 [EVIDENCIA1_2_1]: ./assets/Evidencia_1.2.png
 [EVIDENCIA1_2_2]: ./assets/Evidencia_1_2_2.png
@@ -72,4 +87,3 @@ pdf_options:
 [EVIDENCIA1_5_2]: ./assets/Evidencia_1_5_2.png
 [EVIDENCIA1_5_3]: ./assets/Evidencia_1_5_3.png
 [EVIDENCIA1_5_4]: ./assets/Evidencia_1_5_4.png
-</section>
