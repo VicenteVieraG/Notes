@@ -58,6 +58,8 @@ pdf_options:
 ![Evidencia 1.5.1][EVIDENCIA1_5_1]
 # Evidencia 1.5a Packet Tracer - Web and Email-1.pka
 ![Evidencia 1.5.2][EVIDENCIA1_5_2]
+# Evidencia 1.5b Packet Tracer - DNS and DHCP-1.pka
+![Evidencia 1.5.3][EVIDENCIA1_5_3]
 
 [EVIDENCIA1_2_1]: ./assets/Evidencia_1.2.png
 [EVIDENCIA1_2_2]: ./assets/Evidencia_1_2_2.png
@@ -66,4 +68,5 @@ pdf_options:
 [EVIDENCIA1_4_1]: ./assets/Evidencia_1_4_1.png
 [EVIDENCIA1_5_1]: ./assets/Evidencia_1_5_1.png
 [EVIDENCIA1_5_2]: ./assets/Evidencia_1_5_2.png
+[EVIDENCIA1_5_3]: ./assets/Evidencia_1_5_3.png
 </section>
