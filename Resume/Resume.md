@@ -1,9 +1,9 @@
 ---
 document-title: Resume
-stylesheet: .\style.css 
+stylesheet: .\style.css
 pdf_options:
     format: letter
-    margin: 5mm 5mm
+    margin: 4mm 5mm
     printBackground: true
     outline: true
     headerTemplate: |-
@@ -39,6 +39,65 @@ ________________________________________
 *Zapopan, JAL*
 </div>
 </section>
+
+### Professional Experience
+_________________________________________
+<section id="Content">
+
+#### Rayo
+*Frontend Main Developer & Team Leader*
+- Led the Rayo's main webpage development team.
+- Built the __SCRUM__ workflow with __Cucumber__ and __Cypress__.
+- Created the Rayo's main components' library with __scalability__ and __responsiveness__ in mind using __Astro__.
+
+<div>
+
+*October 2023 — Present*
+</div>
+</section>
+
+### Projects
+_______________________________
+<section id="Content">
+
+#### Brainiac-Web
+*Graphics Engineer | TypeScript, React, Three.js and GLSL*
+- Developed a graphical visualization for the results of a neurological research experiment.
+- Implemented Voronoi's 3D algorithm to color the neural fibers from a tractography.
+
+<div>
+
+*October 2023 – November 2023*
+</div>
+
+</section>
+
+<section id="Content">
+
+#### Conway's Game of Life
+*Zero-Player Simulation of Simple Life | C++, CMake, SDL and OpenGL*
+- Programmed graphicaly an interface of the classic *__Conway's Game of Life__* simulation.
+- Designed an __Object-Oriented__ aproach to handle the game's logic.
+- Developed using my own CMake framework for C/C++ projects.
+
+<div>
+
+*October 2023 — Present*
+</div>
+</section>
+
+### Technical Skills
+___________________________
+- __Languajes:__ C/C++, JavaSctipt, TypeScript, HTML, CSS, and PowerShell.
+- __Frameworks:__ Astro, React, Next.js, React-Native, Tailwind and Cinder.
+- __Developer Tools:__ Git, GitHub, GitHub Code Spaces, Vercel, Render, Visual Studio, VSCode, CMake, gdb and Figma.
+- __Libraries:__ Boost, SDL, Assimp, GLEW, GLFW, glBinding, OpenGL, Flex and Bison.
+
+### Languajes
+____________________________
+- Spanish(Native)
+- English
+- French
 
 <!-- Links -->
 [GITHUB]: https://github.com/VicenteVieraG

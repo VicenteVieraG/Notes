@@ -78,8 +78,7 @@ ul li {
     top: 0px;
     right: 0px;
 }
-#Content div p {
-    background-color: aqua;
+#Content div p em {
     display: block;
     margin-bottom: 0px;
 }
