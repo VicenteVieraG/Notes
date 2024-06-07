@@ -16,4 +16,5 @@ h2 {
 # Tec Files
 - [Semestre 6](./Semestre_6/INDEX.md)
 - [Semestre 7](./Semestre_7/INDEX.md)
+- [Semestre 8](./Semestre_8/INDEX.md)
 </div>
